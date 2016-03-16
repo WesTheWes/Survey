@@ -15,8 +15,7 @@ FROM
     options ON options.id = option_id
         INNER JOIN
     questions ON questions.id = options.question_id
-GROUP BY gender , questions.title , options.option_text
-order by gender , questions.title , responses");
+GROUP BY gender , questions.title , options.option_text ");
     foreach ($result as $row)
     {
         $results[$row['gender']][$row['title']] = array($row['option_text'] => $row['responses']);

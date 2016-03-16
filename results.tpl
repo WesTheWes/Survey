@@ -5,6 +5,7 @@
 
 <body>
 <h1>Results</h1>
+<p>Most picked questions by gender:</p>
 <table>
     {% for gender, result in results %}
         <tr><td><h2>{{ gender }}</h2></td></tr>
